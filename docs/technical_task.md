@@ -16,6 +16,49 @@ The Android Warehouse Chemical Monitoring Application is designed to address the
    - Stores essential information related to chemicals, transactions, and user data.
    - Serves as a centralized repository for efficient data management.
 
+## 2. Project Scope
+
+The project scope outlines the functionalities that will and will not be included in the Android Warehouse Chemical Monitoring Application. The application is designed to cater to three distinct roles: Admin, User, and Storekeeper.
+
+### Inclusions:
+
+#### Admin:
+- Administrative dashboard with access to all functionalities.
+- User management, including the addition, modification, and removal of users.
+- Overview of all chemical transactions.
+
+#### User:
+- Ability to log the taking of chemicals, specifying the chemical, quantity, and timestamp.
+- Record keeping of returned chemicals, including the quantity and timestamp.
+- Receive email notifications if chemicals are not returned by the end of the day.
+
+#### Storekeeper:
+- Access to detailed reports, including information on who took chemicals, when they were taken, when they were returned, and the remaining quantity.
+- Capability to request reports for specific time periods or chemical types.
+
+### Exclusions:
+
+- **Financial Transactions:**
+  - The application will not handle financial transactions related to chemical usage.
+  
+- **Inventory Management:**
+  - Beyond tracking quantities taken and returned, the application will not handle general inventory management tasks.
+
+- **Real-time Monitoring:**
+  - While the application provides real-time tracking of chemical transactions, it does not support continuous monitoring during the day.
+
+- **Chemical Ordering:**
+  - The application will not include features related to ordering new chemicals or managing chemical supply chains.
+
+### Additional Considerations:
+
+- The application will prioritize simplicity and user-friendliness to ensure ease of use for all roles.
+- Security measures will be implemented to safeguard sensitive information.
+- Data privacy and compliance with relevant regulations will be integral to the application's design.
+
+This scope sets clear boundaries for the features and functionalities of the Android Warehouse Chemical Monitoring Application, focusing on the essential tasks of tracking chemical transactions and generating relevant reports for effective warehouse management.
+
+
 ### Objectives
 
 - **Efficiency Improvement:**
