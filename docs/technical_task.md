@@ -123,13 +123,33 @@ This scope sets clear boundaries for the features and functionalities of the And
 Define user stories and use cases to describe how different users will interact with the application.
 
 ## 4. Functional Requirements
+
 List and describe the essential features and functionalities of the application:
-- Chemical Reactive Logging
-- Transaction Tracking
-- User Authentication
-- Barcode Scanning
-- Reporting
-- User Roles and Permissions
+
+### 4.1 Chemicals Logging
+- **Description:** Users should be able to log the taking and returning of chemicals, providing details such as chemical type, quantity, and timestamp.
+- **User Roles:** All roles (Admin, User, Storekeeper)
+
+### 4.2 Transaction Tracking
+- **Description:** The system must track all chemical transactions, including details on who took the chemicals, when they were taken, when they were returned, and the quantity involved.
+- **User Roles:** All roles (Admin, User, Storekeeper)
+
+### 4.3 User Authentication
+- **Description:** Secure authentication mechanisms should be implemented to ensure that only authorized users (Admin, User, Storekeeper) can access the application.
+- **User Roles:** All roles (Admin, User, Storekeeper)
+
+### 4.4 Code Scanning
+- **Description:** The application should support barcode scanning or QR code scanning to streamline the logging process.
+- **User Roles:** All roles (Admin, User, Storekeeper)
+
+### 4.5 Reporting
+- **Description:** Users, especially Storekeepers, should have access to detailed reports on chemical transactions, indicating who took chemicals, when they were taken, when they were returned, and the remaining quantity.
+- **User Roles:** Storekeeper
+
+### 4.6 User Roles and Permissions
+- **Description:** Different roles (Admin, User, Storekeeper) will have distinct permissions to ensure appropriate access levels for each user type.
+- **User Roles:** Admin, User, Storekeeper
+
 
 ## 5. Non-Functional Requirements
 Specify non-functional aspects such as:
