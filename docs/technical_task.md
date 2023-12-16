@@ -25,16 +25,19 @@ The project scope outlines the functionalities that will and will not be include
 #### Admin:
 - Administrative dashboard with access to all functionalities.
 - User management, including the addition, modification, and removal of users.
-- Overview of all chemical transactions.
+- Chemical management, including the addittion, modification and removal of chemicals. Overview of all chemical transactions. 
+- Specifying chemical "storage conditions"
 
 #### User:
-- Ability to log the taking of chemicals, specifying the chemical, quantity, and timestamp.
-- Record keeping of returned chemicals, including the quantity and timestamp.
-- Receive email notifications if chemicals are not returned by the end of the day.
+- Ability to log the taking of chemicals, specifying the chemical, quantity, setting the "needed" period and timestamp. If chemcical has "special storage conditions e.g. "under argon" or "at -20deg", this warning will be shown on the screen.
+- Ability to log the returning of chemicals, specifying the chemical, quantity, and timestamp
+- Receive email notifications if chemicals are not returned by the set "needed" period. 
 
 #### Storekeeper:
 - Access to detailed reports, including information on who took chemicals, when they were taken, when they were returned, and the remaining quantity.
 - Capability to request reports for specific time periods or chemical types.
+- Chemical management, including the addittion, modification and removal of chemicals. Overview of all chemical transactions. 
+- Specifying chemical "storage conditions"
 
 ### Exclusions:
 
@@ -76,49 +79,6 @@ The need for this application arises from the limitations of traditional paper-b
 
 This introduction sets the stage for the subsequent sections, outlining the scope, functionalities, and technical aspects of the Android warehouse chemical monitoring application.
 
-## 2. Project Scope
-
-The project scope outlines the functionalities that will and will not be included in the Android Warehouse Chemical Monitoring Application. The application is designed to cater to three distinct roles: Admin, User, and Storekeeper.
-
-### Inclusions:
-
-#### Admin:
-- Administrative dashboard with access to all functionalities.
-- User management, including the addition, modification, and removal of users.
-- Overview of all chemical transactions.
-
-#### User:
-- Ability to log the taking of chemicals, specifying the chemical, quantity, and timestamp.
-- Record keeping of returned chemicals, including the quantity and timestamp.
-- Receive email notifications if chemicals are not returned by the end of the day.
-
-#### Storekeeper:
-- Access to detailed reports, including information on who took chemicals, when they were taken, when they were returned, and the remaining quantity.
-- Capability to request reports for specific time periods or chemical types.
-
-### Exclusions:
-
-- **Financial Transactions:**
-  - The application will not handle financial transactions related to chemical usage.
-  
-- **Inventory Management:**
-  - Beyond tracking quantities taken and returned, the application will not handle general inventory management tasks.
-
-- **Real-time Monitoring:**
-  - While the application provides real-time tracking of chemical transactions, it does not support continuous monitoring during the day.
-
-- **Chemical Ordering:**
-  - The application will not include features related to ordering new chemicals or managing chemical supply chains.
-
-### Additional Considerations:
-
-- The application will prioritize simplicity and user-friendliness to ensure ease of use for all roles.
-- Security measures will be implemented to safeguard sensitive information.
-- Data privacy and compliance with relevant regulations will be integral to the application's design.
-
-This scope sets clear boundaries for the features and functionalities of the Android Warehouse Chemical Monitoring Application, focusing on the essential tasks of tracking chemical transactions and generating relevant reports for effective warehouse management.
-
-
 ## 3. User Stories and Use Cases
 Define user stories and use cases to describe how different users will interact with the application.
 
@@ -141,6 +101,8 @@ List and describe the essential features and functionalities of the application:
 ### 4.4 Code Scanning
 - **Description:** The application should support barcode scanning or QR code scanning to streamline the logging process.
 - **User Roles:** All roles (Admin, User, Storekeeper)
+/*Comment from DV - I have doubts about the above task, it is not so easy to implement and requires of knowlage of some 3rd party applicatons*/
+
 
 ### 4.5 Reporting
 - **Description:** Users, especially Storekeepers, should have access to detailed reports on chemical transactions, indicating who took chemicals, when they were taken, when they were returned, and the remaining quantity.
@@ -175,13 +137,16 @@ Describe the expected user interface and user experience, including:
 - Screens and navigation flow
 - Input forms
 - Dashboard and reporting layouts
+- Searchbar with possibilities to search by Name, CAS, WH code.
+- Filters (by project, by storage condition, date)
 
 ## 9. Security Considerations
 Identify potential security risks and outline measures to secure the application and its data.
 
 ## 10. Integration
 Specify integration requirements, if any:
-- Barcode scanner integration
+- A plagin to fetch all convenient names of chemical by its CAS number (written on python or other language). I will use Json to comunicate with the app.
+- Barcode scanner integration /*Under the consideration*/
 - User authentication integration
 
 ## 11. Testing Plan
