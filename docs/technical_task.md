@@ -117,6 +117,11 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 
 5. **Feedback:**
    - As a user, I expect to receive a success or failure message indicating the result of my return request.
+  
+**View Logs:**
+
+1. **Login:**
+   - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
 
 
 ## 4. Functional Requirements
