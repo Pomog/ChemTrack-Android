@@ -79,8 +79,45 @@ The need for this application arises from the limitations of traditional paper-b
 
 This introduction sets the stage for the subsequent sections, outlining the scope, functionalities, and technical aspects of the Android warehouse chemical monitoring application.
 
-## 3. User Stories and Use Cases
-Define user stories and use cases to describe how different users will interact with the application.
+### User Stories and Use Cases
+
+**Take from Storage:**
+
+1. **Login:**
+   - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
+
+2. **Initiate Chemical Take:**
+   - As a user, after logging in, I want to click the "Take from Storage" button to initiate the process of acquiring chemicals.
+
+3. **Enter Chemical Details:**
+   - As a user, during the "Take from Storage" process, I want to enter (or scan) the internal code, CAS, or name of the chemical.
+
+4. **Submit Request:**
+   - As a user, after entering the chemical details, I want to click the "Submit" button to request the specified chemical.
+
+5. **Feedback:**
+   - As a user, I expect to receive a success or failure message indicating the result of my request.
+   
+6. **Internal Code and CAS Linkage:**
+   - As a system requirement, the internal code and CAS should be interconnected to ensure accurate tracking and identification of chemicals.
+
+**Return Unused:**
+
+1. **Login:**
+   - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
+
+2. **Initiate Return Process:**
+   - As a user, after logging in, I want to click the "Return Unused" button to initiate the process of returning chemicals.
+
+3. **View Taken Chemicals:**
+   - As a user, during the "Return Unused" process, I want the application to display a list of chemicals previously taken by me.
+
+4. **Return Chemicals:**
+   - As a user, for each chemical displayed, I want to click the "Return" button, enter the quantity in mL or g that I am returning, and click the "Submit" button.
+
+5. **Feedback:**
+   - As a user, I expect to receive a success or failure message indicating the result of my return request.
+
 
 ## 4. Functional Requirements
 
