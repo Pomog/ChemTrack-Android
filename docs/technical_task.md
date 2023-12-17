@@ -1,5 +1,38 @@
 # Technical Task Plan: Android Warehouse Chemical Monitoring Application
 
+## Table of Contents
+
+1. [Introduction](#1-introduction)
+2. [Project Scope](#2-project-scope)
+   - [Inclusions](#inclusions)
+   - [Exclusions](#exclusions)
+   - [Additional Considerations](#additional-considerations)
+3. [Objectives](#objectives)
+4. [Need for the Application](#need-for-the-application)
+5. [User Stories and Use Cases](#user-stories-and-use-cases)
+   - [Take from Storage](#take-from-storage)
+   - [Return Unused](#return-unused)
+   - [View Logs](#view-logs)
+6. [Functional Requirements](#4-functional-requirements)
+   - [Chemicals Logging](#41-chemicals-logging)
+   - [Transaction Tracking](#42-transaction-tracking)
+   - [User Authentication](#43-user-authentication)
+   - [Code Scanning](#44-code-scanning)
+   - [Reporting](#45-reporting)
+   - [User Roles and Permissions](#46-user-roles-and-permissions)
+7. [Non-Functional Requirements](#5-non-functional-requirements)
+8. [Technical Stack](#6-technical-stack)
+9. [Database Design](#7-database-design)
+10. [UI/UX Design](#8-uiux-design)
+11. [Security Considerations](#9-security-considerations)
+12. [Integration](#10-integration)
+13. [Testing Plan](#11-testing-plan)
+14. [Timeline and Milestones](#12-timeline-and-milestones)
+15. [Communication and Collaboration](#13-communication-and-collaboration)
+16. [Documentation](#14-documentation)
+17. [Legal and Compliance](#15-legal-and-compliance)
+18. [Review and Approval](#16-review-and-approval)
+
 ## 1. Introduction
 
 The Android Warehouse Chemical Monitoring Application is designed to address the need for a modern and efficient solution to replace traditional paper logbooks in warehouse environments. The application is divided into three interconnected components:
