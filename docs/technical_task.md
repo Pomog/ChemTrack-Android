@@ -118,11 +118,22 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 5. **Feedback:**
    - As a user, I expect to receive a success or failure message indicating the result of my return request.
   
-**View Logs:**
+### View Logs:
 
 1. **Login:**
    - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
 
+2. **View Taken Chemicals:**
+   - As a user, during the "View Logs" process, I want the application to display a list of chemicals previously taken. This list should include chemicals taken by me, taken by other users, or a specific chemical searched by internal code, CAS, or name.
+
+3. **Sorting and Pagination:**
+   - As a user, I expect the displayed list to be ordered by taking date, from the earliest to the latest. Additionally, the list should support pagination for ease of navigation through multiple entries.
+
+4. **Comprehensive Search:**
+   - As a user, I want the ability to search for specific chemicals using internal code, CAS, or name, ensuring a comprehensive and efficient search functionality.
+
+5. **User-Friendly Interface:**
+   - As a user, I expect the user interface to be intuitive and user-friendly, facilitating easy navigation and understanding of the logged chemical transactions.
 
 ## 4. Functional Requirements
 
@@ -144,6 +155,7 @@ List and describe the essential features and functionalities of the application:
 - **Description:** The application should support barcode scanning or QR code scanning to streamline the logging process.
 - **User Roles:** All roles (Admin, User, Storekeeper)
 /*Comment from DV - I have doubts about the above task, it is not so easy to implement and requires of knowlage of some 3rd party applicatons*/
+/*Comment from YP it is not obligatorily and we can scan only digital number like 0000-0/0-000*/
 
 
 ### 4.5 Reporting
