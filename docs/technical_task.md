@@ -4,34 +4,34 @@
 
 1. [Introduction](#1-introduction)
 2. [Project Scope](#2-project-scope)
-   - [Inclusions](#inclusions)
-   - [Exclusions](#exclusions)
-   - [Additional Considerations](#additional-considerations)
-3. [Objectives](#objectives)
-4. [Need for the Application](#need-for-the-application)
-5. [User Stories and Use Cases](#user-stories-and-use-cases)
-   - [Take from Storage](#take-from-storage)
-   - [Return Unused](#return-unused)
-   - [View Logs](#view-logs)
-6. [Functional Requirements](#4-functional-requirements)
-   - [Chemicals Logging](#41-chemicals-logging)
-   - [Transaction Tracking](#42-transaction-tracking)
-   - [User Authentication](#43-user-authentication)
-   - [Code Scanning](#44-code-scanning)
-   - [Reporting](#45-reporting)
-   - [User Roles and Permissions](#46-user-roles-and-permissions)
-7. [Non-Functional Requirements](#5-non-functional-requirements)
-8. [Technical Stack](#6-technical-stack)
-9. [Database Design](#7-database-design)
-10. [UI/UX Design](#8-uiux-design)
-11. [Security Considerations](#9-security-considerations)
-12. [Integration](#10-integration)
-13. [Testing Plan](#11-testing-plan)
-14. [Timeline and Milestones](#12-timeline-and-milestones)
-15. [Communication and Collaboration](#13-communication-and-collaboration)
-16. [Documentation](#14-documentation)
-17. [Legal and Compliance](#15-legal-and-compliance)
-18. [Review and Approval](#16-review-and-approval)
+   - [Inclusions](#21-inclusions)
+   - [Exclusions](#22-exclusions)
+   - [Additional Considerations](#23-additional-considerations)
+3. [Objectives](#3-objectives)
+4. [Need for the Application](#4-need-for-the-application)
+5. [User Stories and Use Cases](#5-user-stories-and-use-cases)
+   - [Take from Storage](#51-take-from-storage)
+   - [Return Unused](#52-return-unused)
+   - [View Logs](#53-view-logs)
+6. [Functional Requirements](#6-functional-requirements)
+   - [Chemicals Logging](#61-chemicals-logging)
+   - [Transaction Tracking](#62-transaction-tracking)
+   - [User Authentication](#63-user-authentication)
+   - [Code Scanning](#64-code-scanning)
+   - [Reporting](#65-reporting)
+   - [User Roles and Permissions](#66-user-roles-and-permissions)
+7. [Non-Functional Requirements](#7-non-functional-requirements)
+8. [Technical Stack](#8-technical-stack)
+9. [Database Design](#9-database-design)
+10. [UI/UX Design](#10-uiux-design)
+11. [Security Considerations](#11-security-considerations)
+12. [Integration](#12-integration)
+13. [Testing Plan](#13-testing-plan)
+14. [Timeline and Milestones](#14-timeline-and-milestones)
+15. [Communication and Collaboration](#15-communication-and-collaboration)
+16. [Documentation](#16-documentation)
+17. [Legal and Compliance](#17-legal-and-compliance)
+18. [Review and Approval](#18-review-and-approval)
 
 ## 1. Introduction
 
@@ -53,30 +53,30 @@ The Android Warehouse Chemical Monitoring Application is designed to address the
 
 The project scope outlines the functionalities that will and will not be included in the Android Warehouse Chemical Monitoring Application. The application is designed to cater to three distinct roles: Admin, User, and Storekeeper.
 
-### Inclusions:
+### 2.1 Inclusions:
 
 #### Admin:
 - Administrative dashboard with access to all functionalities.
 - User management, including the addition, modification, and removal of users.
-- Chemical management, including the addittion, modification and removal of chemicals. Overview of all chemical transactions. 
+- Chemical management, including the addition, modification, and removal of chemicals. Overview of all chemical transactions.
 - Specifying chemical "storage conditions"
 
 #### User:
-- Ability to log the taking of chemicals, specifying the chemical, quantity, setting the "needed" period and timestamp. If chemcical has "special storage conditions e.g. "under argon" or "at -20deg", this warning will be shown on the screen.
+- Ability to log the taking of chemicals, specifying the chemical, quantity, setting the "needed" period and timestamp. If chemical has "special storage conditions e.g. "under argon" or "at -20deg," this warning will be shown on the screen.
 - Ability to log the returning of chemicals, specifying the chemical, quantity, and timestamp
-- Receive email notifications if chemicals are not returned by the set "needed" period. 
+- Receive email notifications if chemicals are not returned by the set "needed" period.
 
 #### Storekeeper:
 - Access to detailed reports, including information on who took chemicals, when they were taken, when they were returned, and the remaining quantity.
 - Capability to request reports for specific time periods or chemical types.
-- Chemical management, including the addittion, modification and removal of chemicals. Overview of all chemical transactions. 
+- Chemical management, including the addition, modification, and removal of chemicals. Overview of all chemical transactions.
 - Specifying chemical "storage conditions"
 
-### Exclusions:
+### 2.2 Exclusions:
 
 - **Financial Transactions:**
   - The application will not handle financial transactions related to chemical usage.
-  
+
 - **Inventory Management:**
   - Beyond tracking quantities taken and returned, the application will not handle general inventory management tasks.
 
@@ -86,7 +86,7 @@ The project scope outlines the functionalities that will and will not be include
 - **Chemical Ordering:**
   - The application will not include features related to ordering new chemicals or managing chemical supply chains.
 
-### Additional Considerations:
+### 2.3 Additional Considerations:
 
 - The application will prioritize simplicity and user-friendliness to ensure ease of use for all roles.
 - Security measures will be implemented to safeguard sensitive information.
@@ -94,8 +94,7 @@ The project scope outlines the functionalities that will and will not be include
 
 This scope sets clear boundaries for the features and functionalities of the Android Warehouse Chemical Monitoring Application, focusing on the essential tasks of tracking chemical transactions and generating relevant reports for effective warehouse management.
 
-
-### Objectives
+### 3. Objectives
 
 - **Efficiency Improvement:**
   - Replace traditional paper logbooks with a digital solution to streamline and enhance the monitoring of chemicals in warehouses.
@@ -106,15 +105,15 @@ This scope sets clear boundaries for the features and functionalities of the And
 - **User-Friendly Interface:**
   - Develop an intuitive Android application that simplifies the process of logging, tracking, and managing chemicals.
 
-### Need for the Application
+### 4. Need for the Application
 
 The need for this application arises from the limitations of traditional paper-based logbooks, which are often time-consuming, prone to errors, and lack real-time accessibility. The Android Warehouse Chemical Monitoring Application aims to overcome these challenges by providing a digital platform that ensures efficient tracking, secure communication, and centralized data management.
 
 This introduction sets the stage for the subsequent sections, outlining the scope, functionalities, and technical aspects of the Android warehouse chemical monitoring application.
 
-### User Stories and Use Cases
+### 5. User Stories and Use Cases
 
-**Take from Storage:**
+**5.1 Take from Storage:**
 
 1. **Login:**
    - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
@@ -130,11 +129,11 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 
 5. **Feedback:**
    - As a user, I expect to receive a success or failure message indicating the result of my request.
-   
+
 6. **Internal Code and CAS Linkage:**
    - As a system requirement, the internal code and CAS should be interconnected to ensure accurate tracking and identification of chemicals.
 
-**Return Unused:**
+**5.2 Return Unused:**
 
 1. **Login:**
    - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
@@ -150,8 +149,8 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 
 5. **Feedback:**
    - As a user, I expect to receive a success or failure message indicating the result of my return request.
-  
-### View Logs:
+
+**5.3 View Logs:**
 
 1. **Login:**
    - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
@@ -168,58 +167,54 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 5. **User-Friendly Interface:**
    - As a user, I expect the user interface to be intuitive and user-friendly, facilitating easy navigation and understanding of the logged chemical transactions.
 
-## 4. Functional Requirements
+## 6. Functional Requirements
 
 List and describe the essential features and functionalities of the application:
 
-### 4.1 Chemicals Logging
+### 6.1 Chemicals Logging
 - **Description:** Users should be able to log the taking and returning of chemicals, providing details such as chemical type, quantity, and timestamp.
 - **User Roles:** All roles (Admin, User, Storekeeper)
 
-### 4.2 Transaction Tracking
+### 6.2 Transaction Tracking
 - **Description:** The system must track all chemical transactions, including details on who took the chemicals, when they were taken, when they were returned, and the quantity involved.
 - **User Roles:** All roles (Admin, User, Storekeeper)
 
-### 4.3 User Authentication
+### 6.3 User Authentication
 - **Description:** Secure authentication mechanisms should be implemented to ensure that only authorized users (Admin, User, Storekeeper) can access the application.
 - **User Roles:** All roles (Admin, User, Storekeeper)
 
-### 4.4 Code Scanning
+### 6.4 Code Scanning
 - **Description:** The application should support barcode scanning or QR code scanning to streamline the logging process.
-- **User Roles:** All roles (Admin, User, Storekeeper)
-/*Comment from DV - I have doubts about the above task, it is not so easy to implement and requires of knowlage of some 3rd party applicatons*/
-/*Comment from YP it is not obligatorily and we can scan only digital number like 0000-0/0-000*/
+- **User Roles:** All roles (Admin, User, Storekeeper) /*Comment from DV - I have doubts about the above task, it is not so easy to implement and requires knowledge of some 3rd party applications*/ /*Comment from YP it is not obligatorily and we can scan only digital number like 0000-0/0-000*/
 
-
-### 4.5 Reporting
+### 6.5 Reporting
 - **Description:** Users, especially Storekeepers, should have access to detailed reports on chemical transactions, indicating who took chemicals, when they were taken, when they were returned, and the remaining quantity.
 - **User Roles:** Storekeeper
 
-### 4.6 User Roles and Permissions
+### 6.6 User Roles and Permissions
 - **Description:** Different roles (Admin, User, Storekeeper) will have distinct permissions to ensure appropriate access levels for each user type.
 - **User Roles:** Admin, User, Storekeeper
 
-
-## 5. Non-Functional Requirements
+## 7. Non-Functional Requirements
 Specify non-functional aspects such as:
 - Performance expectations
 - Security measures (encryption, secure authentication)
 - Compatibility with Android devices (minimum Android version)
 
-## 6. Technical Stack
+## 8. Technical Stack
 Specify the technology stack:
 - Programming Language: Kotlin
 - Development Framework: Android SDK
 - Database: SQLite or Room Database
 - Third-party Libraries: If any (e.g., barcode scanning libraries)
 
-## 7. Database Design
+## 9. Database Design
 Outline the database structure, including tables and relationships:
 - Chemicals Table
 - Transactions Table
 - Users Table
 
-## 8. UI/UX Design
+## 10. UI/UX Design
 Describe the expected user interface and user experience, including:
 - Screens and navigation flow
 - Input forms
@@ -227,22 +222,22 @@ Describe the expected user interface and user experience, including:
 - Searchbar with possibilities to search by Name, CAS, WH code.
 - Filters (by project, by storage condition, date)
 
-## 9. Security Considerations
+## 11. Security Considerations
 Identify potential security risks and outline measures to secure the application and its data.
 
-## 10. Integration
+## 12. Integration
 Specify integration requirements, if any:
-- A plagin to fetch all convenient names of chemical by its CAS number (written on python or other language). I will use Json to comunicate with the app.
-- Barcode scanner integration /*Under the consideration*/
+- A plugin to fetch all convenient names of chemical by its CAS number (written on python or another language). I will use Json to communicate with the app.
+- Barcode scanner integration /*Under consideration*/
 - User authentication integration
 
-## 11. Testing Plan
+## 13. Testing Plan
 Define a comprehensive testing plan:
 - Unit testing for individual components
 - Integration testing for combined functionalities
 - User acceptance testing
 
-## 12. Timeline and Milestones
+## 14. Timeline and Milestones
 Establish a timeline for the development process:
 - Milestone 1: Database design and setup
 - Milestone 2: UI/UX design and basic functionality implementation
@@ -250,22 +245,21 @@ Establish a timeline for the development process:
 - Milestone 4: Final testing and debugging
 - Milestone 5: Deployment and post-launch support
 
-## 13. Communication and Collaboration
+## 15. Communication and Collaboration
 Specify communication tools and channels for effective collaboration:
 - Project management platform (e.g., Jira)
 - Regular meetings (weekly or bi-weekly)
 
-## 14. Documentation
+## 16. Documentation
 Emphasize the importance of documentation:
 - Code documentation
 - User manuals
 - Technical documentation for maintenance
 
-## 15. Legal and Compliance
+## 17. Legal and Compliance
 Ensure compliance with relevant laws and regulations.
 
-## 16. Review and Approval
+## 18. Review and Approval
 Define a process for regular reviews and approvals from stakeholders:
 - Regular demo sessions
 - Stakeholder feedback sessions
-
