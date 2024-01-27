@@ -12,7 +12,10 @@
 5. [User Stories and Use Cases](#5-user-stories-and-use-cases)
    - [Take from Storage](#51-take-from-storage)
    - [Return Unused](#52-return-unused)
-   - [View Logs](#53-view-logs)
+   - [View Logs for User](#53-view-logs-for-user)
+   - [View Logs for Storekeeper](#54-view-logs-for-storekeeper)
+   - [Adding Chemicals](#55-adding-cemicals-to-the-base-for-storekeeper)
+   - [Deleting Chemicals](#56-deleting-chemicals-to-the-base-for-storekeeper)
 6. [Functional Requirements](#6-functional-requirements)
    - [Chemicals Logging](#61-chemicals-logging)
    - [Transaction Tracking](#62-transaction-tracking)
@@ -113,7 +116,7 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 
 ### 5. User Stories and Use Cases
 
-**5.1 Take from Storage:**
+#### **5.1 Take from Storage:**
 
 1. **Login:**
    - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
@@ -133,7 +136,7 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 6. **Internal Code and CAS Linkage:**
    - As a system requirement, the internal code, name and CAS should be interconnected to ensure accurate tracking and identification of chemicals.
 
-**5.2 Return Unused:**
+#### **5.2 Return Unused:**
 
 1. **Login:**
    - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
@@ -150,7 +153,7 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 5. **Feedback:**
    - As a user, I expect to receive a success or failure message indicating the result of my return request.
 
-**5.3 View Logs for User:**
+#### **5.3 View Logs for User:**
 
 1. **Login:**
    - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
@@ -167,7 +170,7 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 5. **User-Friendly Interface:**
    - As a user, I expect the user interface to be intuitive and user-friendly, facilitating easy navigation and understanding of the logged chemical transactions.
 
-**5.3 View Logs for Storekeeper:**
+#### **5.4 View Logs for Storekeeper:**
 1. **Login:**
    - As a Storekeeper, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
      
@@ -175,9 +178,9 @@ This introduction sets the stage for the subsequent sections, outlining the scop
    - As a user, during the "View All Logs" process, I want the application to display, by default a list of all chemicals previously taken, and not returned, the list can be sorted by time or user. This list should include chemicals taken by all users, or a specific chemical searched by internal code, CAS, or name. A list of all previously taken chemicals is also should be visible, the list can be sorted by time or user.
    - To notify the User about the chemicals taken, press the "email" button and compose a message.
 
-**5.4 Adding Chemicals to the Base for Storekeeper:**
+#### **5.5 Adding Chemicals to the Base for Storekeeper:**
 
-**5.4 Deleting Chemicals to the Base for Storekeeper:**
+#### **5.6 Deleting Chemicals to the Base for Storekeeper:**
 
 ## 6. Functional Requirements
 
