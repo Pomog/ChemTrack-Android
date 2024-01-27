@@ -179,8 +179,10 @@ This introduction sets the stage for the subsequent sections, outlining the scop
    - To notify the User about the chemicals taken, press the "email" button and compose a message.
 
 #### **5.5 Adding Chemicals to the Base for Storekeeper:**
+   - As a Storekeeper, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
 
 #### **5.6 Deleting Chemicals to the Base for Storekeeper:**
+   - As a Storekeeper, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access
 
 ## 6. Functional Requirements
 
