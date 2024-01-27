@@ -14,7 +14,7 @@
    - [Return Unused](#52-return-unused)
    - [View Logs for User](#53-view-logs-for-user)
    - [View Logs for Storekeeper](#54-view-logs-for-storekeeper)
-   - [Adding Chemicals](#55-adding-cemicals-to-the-base-for-storekeeper)
+   - [Adding Chemicals](#55-adding-chemicals-to-the-base-for-storekeeper)
    - [Deleting Chemicals](#56-deleting-chemicals-to-the-base-for-storekeeper)
 6. [Functional Requirements](#6-functional-requirements)
    - [Chemicals Logging](#61-chemicals-logging)
