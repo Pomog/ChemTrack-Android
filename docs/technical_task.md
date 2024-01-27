@@ -128,10 +128,10 @@ This introduction sets the stage for the subsequent sections, outlining the scop
    - As a user, after entering the chemical details, I want to click the "Submit" button to request the specified chemical.
 
 5. **Feedback:**
-   - As a user, I expect to receive a success or failure message indicating the result of my request.
+   - As a user, I expect to receive a success or failure message indicating the result of my request, amount of substance mass, or volume should be visible.
 
 6. **Internal Code and CAS Linkage:**
-   - As a system requirement, the internal code and CAS should be interconnected to ensure accurate tracking and identification of chemicals.
+   - As a system requirement, the internal code, name and CAS should be interconnected to ensure accurate tracking and identification of chemicals.
 
 **5.2 Return Unused:**
 
@@ -150,13 +150,13 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 5. **Feedback:**
    - As a user, I expect to receive a success or failure message indicating the result of my return request.
 
-**5.3 View Logs:**
+**5.3 View Logs for User:**
 
 1. **Login:**
    - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
 
 2. **View Taken Chemicals:**
-   - As a user, during the "View Logs" process, I want the application to display a list of chemicals previously taken. This list should include chemicals taken by me, taken by other users, or a specific chemical searched by internal code, CAS, or name.
+   - As a user, during the "View Logs" process, I want the application to display by default a list of chemicals previously taken, and not returned. This list should include chemicals taken by me. A list of all previously taken and returned chemicals is also should be visible. Sorting by date. 
 
 3. **Sorting and Pagination:**
    - As a user, I expect the displayed list to be ordered by taking date, from the earliest to the latest. Additionally, the list should support pagination for ease of navigation through multiple entries.
@@ -166,6 +166,18 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 
 5. **User-Friendly Interface:**
    - As a user, I expect the user interface to be intuitive and user-friendly, facilitating easy navigation and understanding of the logged chemical transactions.
+
+**5.3 View Logs for Storekeeper:**
+1. **Login:**
+   - As a Storekeeper, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
+     
+2. **View Taken Chemicals for Storekeeper:**
+   - As a user, during the "View All Logs" process, I want the application to display, by default a list of all chemicals previously taken, and not returned, the list can be sorted by time or user. This list should include chemicals taken by all users, or a specific chemical searched by internal code, CAS, or name. A list of all previously taken chemicals is also should be visible, the list can be sorted by time or user.
+   - To notify the User about the chemicals taken, press the "email" button and compose a message.
+
+**5.4 Adding Chemicals to the Base for Storekeeper:**
+
+**5.4 Deleting Chemicals to the Base for Storekeeper:**
 
 ## 6. Functional Requirements
 
