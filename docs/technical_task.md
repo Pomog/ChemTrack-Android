@@ -51,6 +51,8 @@ The Android Warehouse Chemical Monitoring Application is designed to address the
 3. **Database:**
    - Stores essential information related to chemicals, transactions, and user data.
    - Serves as a centralized repository for efficient data management.
+4. **Presentation Link:**
+   - [Figma Presentation](https://www.figma.com/proto/iMbZroTCQ2LXOcntrK7icS/Warehouse?type=design&node-id=0-1&t=nZjCDZjRCMFoUo6u-0&scaling=scale-down&page-id=0%3A1&starting-point-node-id=21%3A6)
 
 ## 2. Project Scope
 
