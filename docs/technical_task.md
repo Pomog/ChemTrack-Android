@@ -171,26 +171,59 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 
 #### **5.4 View Logs for WH Manager:**
 1. **Login:**
-   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the initial screen.
+   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the WH initial screen.
+2. **View WH Logs**
+   - I click WH Logs Button, and will be redirected to WH Logs page, where I can search by WH code, CAS, subname and User name. I can see who took the substance, who returned it, amount and data.
      
-2. **Warehouse**
-   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, I can "Edit" or view "Info" about any chemical.
-     
-3. **Edit Chemical**
-   - By clicking "Edit" button, I wil be redirected to the page, where I can edit existing chemical.
-   - After Editing I will be redirected to the confirmation page, where I can see the changes that have been done and after reviewing them I can confirm the change.
-   - Afte pressing "confirm" button I will be redirected to the feedback page, where I receive a error or success message.
-4. **Info about chemical**
+#### **5.5 View Warehouse:**
+1. **Login:**
+   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the WH initial screen.
+2. **View WH** 
+   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, I see how much chemcicals is remained and how much is taken.
+3. **Info about chemical**
    - Afte clicking "info" button I will be redirected to the Info page, wher I can see all current information about given chemical, who and when took it, how much was taken every time, how much is remaining.
-     
-5. **View Taken Chemicals for WH manager:**
+
+#### **5.5 Edit Chemical:**
+1. **Login:**
+   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the WH initial screen.
+2. **View WH** 
+   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, I see how much chemcicals is remained and how much is taken.
+3. **Select a row with the Chemical**
+   - By clicking the row with the chemical that needs to be edited, I can select it.
+3. **Edit Chemical**
+   - By clicking "Edit" button, I wil be redirected to the page, where I can edit or delete existing chemical.
+   - After Editing I will be redirected to the confirmation page, where I can see the changes that have been done and after reviewing them I can confirm the change.
+   - Afte pressing "confirm" button I will be redirected to the feedback page, where I receive a message about successful editing.
+
+#### **5.6 Delete Chemical:**
+1. **Login:**
+   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the WH initial screen.
+2. **View WH** 
+   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, I see how much chemcicals is remained and how much is taken.
+3. **Select a row with the Chemical**
+   - By clicking the row with the chemical that needs to be edited, I can select it.
+3. **Delete Chemical**
+   - By clicking "Edit" button, I wil be redirected to the page, where I can edit or delete existing chemical.
+   - After Editing I will be redirected to the confirmation page, where I can see the changes that have been done and after reviewing them I can confirm the change.
+   - Afte pressing "delete" button I will be redirected to the feedback page, where I receive a message about successful deletion.
+
+#### **5.7 View Taken Chemicals for WH manager:**
+1. **Login:**
+   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the WH initial screen.
+2. **View Taken Chemicals for WH manager:** 
    - As a user, during the "View Taken Chemicals" process, I want the application to display, by default a list of all chemicals previously taken, and not returned, the list can be sorted by time or user. This list should include chemicals taken by all users, or a specific chemical searched by internal code, CAS, or name. A list of all previously taken chemicals is also should be visible, the list can be sorted by time or user.
-   - To notify the User about the chemicals taken, press the "send notification" button and compose a message.
+   - To notify the User about the chemicals taken, press the "send notification" button and compose a message.  
 
-#### **5.5 Adding Chemicals to the Base for Storekeeper:**
-   - As a Storekeeper, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
 
-#### **5.6 Deleting Chemicals to the Base for Storekeeper:**
+
+_____________________________________________________________________________to be eddited_________________________________________________________________
+#### **5.5 Adding Chemicals to the Data Base for WH manager:**
+   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
+   - Next I want to click "Register" button and will be redirected to register page.
+   - There I see multiple input fields, I need to input CAS number, Mr Formula, Chemical name, Amount, and units. Next I want to click "Continue" button, and I will be redirected to the next registration page, where I can input additional data.
+   - After clicking "Continue" page, I will be redirected to second registration page, where I can input storage conditions and other Special conditions. After it is done, I can press "confirm" button and will get a feedback upon successful or faild operation.
+
+#### **5.6 Deleting Chemicals to the Data Base for Storekeeper:**
    - As a Storekeeper, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access
 
 ## 6. Functional Requirements
