@@ -123,14 +123,14 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 1. **Login:**
    - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
 
-2. **Initiate Chemical Take:**
+2. **Take from storage:**
    - As a user, after logging in, I want to click the "Take from Storage" button to initiate the process of acquiring chemicals.
 
 3. **Enter Chemical Details:**
-   - As a user, during the "Take from Storage" process, I want to enter (or scan) the internal code, CAS, or name of the chemical.
+   - As a user, during the "Take from Storage" process, I want to enter (or scan, in next updates) the internal code, CAS, or name of the chemical.
 
-4. **Submit Request:**
-   - As a user, after entering the chemical details, I want to click the "Submit" button to request the specified chemical.
+4. **Confirm withdrawal:**
+   - As a user, after entering the chemical details, I want to click the "Confirm" button to request the specified chemical.
 
 5. **Feedback:**
    - As a user, I expect to receive a success or failure message indicating the result of my request, amount of substance mass, or volume should be visible.
@@ -138,47 +138,54 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 6. **Internal Code and CAS Linkage:**
    - As a system requirement, the internal code, name and CAS should be interconnected to ensure accurate tracking and identification of chemicals.
 
-#### **5.2 Return Unused:**
+#### **5.2 Return To Storage:**
 
 1. **Login:**
    - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
 
-2. **Initiate Return Process:**
-   - As a user, after logging in, I want to click the "Return Unused" button to initiate the process of returning chemicals.
+2. **Initiate Return To Storage Process:**
+   - As a user, after logging in, I want to click the "Return To Storage" button to initiate the process of returning chemicals.
 
 3. **View Taken Chemicals:**
-   - As a user, during the "Return Unused" process, I want the application to display a list of chemicals previously taken by me.
+   - As a user, during the "Return To Storage" process, I want the application to display a list of chemicals previously taken by me.
 
 4. **Return Chemicals:**
-   - As a user, for each chemical displayed, I want to click the "Return" button, enter the quantity in mL or g that I am returning, and click the "Submit" button.
+   - As a user, for each chemical displayed, I want to click the on a specific chemical, enter the quantity in mL or g that I am returning, and click the "Proceed" button.
 
-5. **Feedback:**
+5. **Confirm**
+   - As a user, I will be redirected to the page for final confirmation. On this page I'll be able to see the substance, used amount, other relevant informaion, and after checking I will click "Confirm" button to finalize the returning.
+     
+7. **Feedback:**
    - As a user, I expect to receive a success or failure message indicating the result of my return request.
 
-#### **5.3 View Logs for User:**
+#### **5.3 Check My History:**
 
 1. **Login:**
    - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
 
 2. **View Taken Chemicals:**
-   - As a user, during the "View Logs" process, I want the application to display by default a list of chemicals previously taken, and not returned. This list should include chemicals taken by me. A list of all previously taken and returned chemicals is also should be visible. Sorting by date. 
+   - As a user, during the "Check my history" process, I want the application to display by default a list of chemicals previously taken, and not returned. This list should include chemicals taken by me. A list of all previously taken and returned chemicals is also should be visible. Sorting by date. 
 
-3. **Sorting and Pagination:**
-   - As a user, I expect the displayed list to be ordered by taking date, from the earliest to the latest. Additionally, the list should support pagination for ease of navigation through multiple entries.
+3. **Sorting and Scrolling:**
+   - As a user, I expect the displayed list to be ordered by taking date, from the earliest to the latest. Additionally, the list should support scrolling for ease of navigation through multiple entries.
 
-4. **Comprehensive Search:**
-   - As a user, I want the ability to search for specific chemicals using internal code, CAS, or name, ensuring a comprehensive and efficient search functionality.
-
-5. **User-Friendly Interface:**
-   - As a user, I expect the user interface to be intuitive and user-friendly, facilitating easy navigation and understanding of the logged chemical transactions.
-
-#### **5.4 View Logs for Storekeeper:**
+#### **5.4 View Logs for WH Manager:**
 1. **Login:**
-   - As a Storekeeper, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
+   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the initial screen.
      
-2. **View Taken Chemicals for Storekeeper:**
-   - As a user, during the "View All Logs" process, I want the application to display, by default a list of all chemicals previously taken, and not returned, the list can be sorted by time or user. This list should include chemicals taken by all users, or a specific chemical searched by internal code, CAS, or name. A list of all previously taken chemicals is also should be visible, the list can be sorted by time or user.
-   - To notify the User about the chemicals taken, press the "email" button and compose a message.
+2. **Warehouse**
+   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, I can "Edit" or view "Info" about any chemical.
+     
+3. **Edit Chemical**
+   - By clicking "Edit" button, I wil be redirected to the page, where I can edit existing chemical.
+   - After Editing I will be redirected to the confirmation page, where I can see the changes that have been done and after reviewing them I can confirm the change.
+   - Afte pressing "confirm" button I will be redirected to the feedback page, where I receive a error or success message.
+4. **Info about chemical**
+   - Afte clicking "info" button I will be redirected to the Info page, wher I can see all current information about given chemical, who and when took it, how much was taken every time, how much is remaining.
+     
+5. **View Taken Chemicals for WH manager:**
+   - As a user, during the "View Taken Chemicals" process, I want the application to display, by default a list of all chemicals previously taken, and not returned, the list can be sorted by time or user. This list should include chemicals taken by all users, or a specific chemical searched by internal code, CAS, or name. A list of all previously taken chemicals is also should be visible, the list can be sorted by time or user.
+   - To notify the User about the chemicals taken, press the "send notification" button and compose a message.
 
 #### **5.5 Adding Chemicals to the Base for Storekeeper:**
    - As a Storekeeper, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
@@ -187,7 +194,10 @@ This introduction sets the stage for the subsequent sections, outlining the scop
    - As a Storekeeper, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access
 
 ## 6. Functional Requirements
-
+**Comprehensive Search:**
+   - As a user, I want the ability to search for specific chemicals using internal code, CAS, or name, ensuring a comprehensive and efficient search functionality.
+**User-Friendly Interface:**
+   - As a user, I expect the user interface to be intuitive and user-friendly, facilitating easy navigation and understanding of the logged chemical transactions.
 List and describe the essential features and functionalities of the application:
 
 ### 6.1 Chemicals Logging
