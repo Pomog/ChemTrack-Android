@@ -12,7 +12,7 @@
 5. [User Stories and Use Cases](#5-user-stories-and-use-cases)
    - [Take from Storage](#51-take-from-storage)
    - [Return To Storage](#52-return-to-storage)
-   - [View Logs for User](#53-view-logs-for-user)
+   - [Check My History](#53-check-my-history)
    - [View Logs for Storekeeper](#54-view-logs-for-storekeeper)
    - [Adding Chemicals](#55-adding-chemicals-to-the-base-for-storekeeper)
    - [Deleting Chemicals](#56-deleting-chemicals-to-the-base-for-storekeeper)
@@ -121,13 +121,13 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 #### **5.1 Take from Storage:**
 
 1. **Login:**
-   - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
+   - As a user, I want to launch the application, login with my username (autocompletion available), and enter my password for secure access.
 
 2. **Take from storage:**
    - As a user, after logging in, I want to click the "Take from Storage" button to initiate the process of acquiring chemicals.
 
 3. **Enter Chemical Details:**
-   - As a user, during the "Take from Storage" process, I want to enter (or scan, in next updates) the internal code, CAS, or name of the chemical.
+   - As a user, during the "Take from Storage" process, I want to enter (or scan, in the next updates) the internal code, CAS, or name of the chemical.
 
 4. **Confirm withdrawal:**
    - As a user, after entering the chemical details, I want to click the "Confirm" button to request the specified chemical.
@@ -161,51 +161,51 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 #### **5.3 Check My History:**
 
 1. **Login:**
-   - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
+   - As a user, I want to launch the application, log in with my username (auto-completion available), and enter my password for secure access.
 
 2. **View Taken Chemicals:**
-   - As a user, during the "Check my history" process, I want the application to display by default a list of chemicals previously taken, and not returned. This list should include chemicals taken by me. A list of all previously taken and returned chemicals is also should be visible. Sorting by date. 
+   - As a user, during the "Check my history" process, I want the application to display a list of chemicals previously taken, not returned by default. This list should include chemicals taken by me. A list of all previously taken and returned chemicals is also should be visible. Sorting by date. 
 
 3. **Sorting and Scrolling:**
    - As a user, I expect the displayed list to be ordered by taking date, from the earliest to the latest. Additionally, the list should support scrolling for ease of navigation through multiple entries.
 
 #### **5.4 View Logs for WH Manager:**
 1. **Login:**
-   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the WH initial screen.
+   - As a WH manager, I want to launch the application, login with my username (auto-completion available), and enter my password for secure access. I will be redirected to the WH initial screen.
 2. **View WH Logs**
-   - I click WH Logs Button, and will be redirected to WH Logs page, where I can search by WH code, CAS, subname and User name. I can see who took the substance, who returned it, amount and data.
+   - I click WH Logs Button, and will be redirected to WH Logs page, where I can search by WH code, CAS, subname, and User name. I can see who took the substance, who returned it, the amount, and the date.
      
 #### **5.5 View Warehouse:**
 1. **Login:**
-   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the WH initial screen.
+   - As a WH manager, I want to launch the application, login with my username (auto-completion available), and enter my password for secure access. I will be redirected to the WH initial screen.
 2. **View WH** 
    - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, I see how much chemcicals is remained and how much is taken.
 3. **Info about chemical**
-   - Afte clicking "info" button I will be redirected to the Info page, wher I can see all current information about given chemical, who and when took it, how much was taken every time, how much is remaining.
+   - After clicking the "info" button I will be redirected to the Info page, where I can see all current information about given chemical, who and when took it, how much was taken every time, and how much is remaining.
 
 #### **5.6 Edit Chemical:**
 1. **Login:**
-   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the WH initial screen.
+   - As a WH manager, I want to launch the application, login with my username (auto-completion available), and enter my password for secure access. I will be redirected to the WH initial screen.
 2. **View WH** 
-   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, I see how much chemcicals is remained and how much is taken.
+   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, I see how much chemicals remain and how much is taken.
 3. **Select a row with the Chemical**
    - By clicking the row with the chemical that needs to be edited, I can select it.
 3. **Edit Chemical**
-   - By clicking "Edit" button, I wil be redirected to the page, where I can edit or delete existing chemical.
-   - After Editing I will be redirected to the confirmation page, where I can see the changes that have been done and after reviewing them I can confirm the change.
+   - By clicking "Edit" button, I wil be redirected to the page, where I can edit or delete existing chemicals.
+   - After Editing I will be redirected to the confirmation page, where I can see the changes done and after reviewing them I can confirm the change.
    - Afte pressing "confirm" button I will be redirected to the feedback page, where I receive a message about successful editing.
 
 #### **5.7 Delete Chemical:**
 1. **Login:**
-   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the WH initial screen.
+   - As a WH manager, I want to launch the application, login with my username (auto-completion available), and enter my password for secure access. I will be redirected to the WH initial screen.
 2. **View WH** 
-   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, I see how much chemcicals is remained and how much is taken.
+   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, and I see how many chemicals remain and how much is taken.
 3. **Select a row with the Chemical**
    - By clicking the row with the chemical that needs to be edited, I can select it.
 3. **Delete Chemical**
-   - By clicking "Edit" button, I wil be redirected to the page, where I can edit or delete existing chemical.
+   - By clicking the "Edit" button, I will be redirected to the page, where I can edit or delete existing chemicals.
    - After Editing I will be redirected to the confirmation page, where I can see the changes that have been done and after reviewing them I can confirm the change.
-   - Afte pressing "delete" button I will be redirected to the feedback page, where I receive a message about successful deletion.
+   - After pressing the "delete" button I will be redirected to the feedback page, where I receive a message about successful deletion.
 
 #### **5.8 View Taken Chemicals for WH manager:**
 1. **Login:**
@@ -215,16 +215,16 @@ This introduction sets the stage for the subsequent sections, outlining the scop
    - To notify the User about the chemicals taken, press the "send notification" button and compose a message.  
 
 #### **5.9 Register chemicals to the Data Base for WH manager:**
-   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
-   - Next I want to click "Register" button and will be redirected to register page.
-   - There I see multiple input fields, I need to input CAS number, Mr Formula, Chemical name, Amount, and units. Next I want to click "Continue" button, and I will be redirected to the next registration page, where I can input additional data.
-   - After clicking "Continue" page, I will be redirected to second registration page, where I can input storage conditions and other Special conditions. After it is done, I can press "confirm" button and will get a feedback upon successful or faild operation.
+   - As a WH manager, I want to launch the application, login with my username (auto-completion available), and enter my password for secure access.
+   - Next, I want to click the "Register" button and will be redirected to the register page.
+   - There I see multiple input fields, I need to input CAS number, Mr Formula, Chemical name, Amount, and units. Next, I want to click the "Continue" button, and I will be redirected to the next registration page, where I can input additional data.
+   - After clicking the "Continue" page, I will be redirected to the second registration page, where I can input storage conditions and other Special conditions. After it is done, I can press the "confirm" button and will get feedback upon successful or failed operation.
 
-#### **5.10 Changning and assigning new roles fro user:**
-   - As an Adming, I want to launch the application, log in with my username (autocompletion available, login and password will be pre-defined), and enter my password for secure access
-   - I can click button "Account Management" on the initial screen.
-   - I will be redirected to the page "account management", where I see search field and I can search users by name.
-   - After finding a user, I can chose new role for him and I can press "confirm" button and will get a feedback upon successful or faild operation.
+#### **5.10 Changning and assigning new roles for user:**
+   - As an Admin, I want to launch the application, login with my username (auto-completion available, login and password will be pre-defined), and enter my password for secure access
+   - I can click the button "Account Management" on the initial screen.
+   - I will be redirected to the page "account management", where I see a search field and I can search users by name.
+   - After finding a user, I can choose a new role for him and I can press the "confirm" button and will get a feedback upon successful or failed operation.
 
 ## 6. Functional Requirements
 **Comprehensive Search:**
