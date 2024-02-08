@@ -19,7 +19,7 @@
    - [Delete Chemical](#57-delete-chemical)
    - [View Taken Chemicals for WH manager](#58-view-taken-chemicals-for-wh-manager)
    - [Register chemicals to the Data Base for WH manager](#59-register-chemicals-to-the-data-base-for-wh-manager)
-   - [Changing and assigning new roles for user](#511-changing-and-assigning-new-roles-for-user)
+   - [Changing and assigning new roles for user](#510-changing-and-assigning-new-roles-for-user)
 6. [Functional Requirements](#6-functional-requirements)
    - [Chemicals Logging](#61-chemicals-logging)
    - [Transaction Tracking](#62-transaction-tracking)
