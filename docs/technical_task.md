@@ -19,7 +19,7 @@
    - [Delete Chemical](#57-delete-chemical)
    - [View Taken Chemicals for WH manager](#58-view-taken-chemicals-for-wh-manager)
    - [Register chemicals to the Data Base for WH manager](#59-register-chemicals-to-the-data-base-for-wh-manager)
-   - [Changing and assigning new roles for user](#511-changing-and-assigning-new-roles-for-user)
+   - [Changning and assigning new roles for user](#511-changning-and-assigning-new-roles-for-user)
 6. [Functional Requirements](#6-functional-requirements)
    - [Chemicals Logging](#61-chemicals-logging)
    - [Transaction Tracking](#62-transaction-tracking)
@@ -224,7 +224,7 @@ This introduction sets the stage for the subsequent sections, outlining the scop
    - There I see multiple input fields, I need to input CAS number, Mr Formula, Chemical name, Amount, and units. Next, I want to click the "Continue" button, and I will be redirected to the next registration page, where I can input additional data.
    - After clicking the "Continue" page, I will be redirected to the second registration page, where I can input storage conditions and other Special conditions. After it is done, I can press the "confirm" button and will get feedback upon successful or failed operation.
 
-#### **5.11 Changning and assigning new roles for user:**
+#### **5.10 Changning and assigning new roles for user:**
    - As an Admin, I want to launch the application, login with my username (auto-completion available, login and password will be pre-defined), and enter my password for secure access
    - I can click the button "Account Management" on the initial screen.
    - I will be redirected to the page "account management", where I see a search field and I can search users by name.
