@@ -13,9 +13,13 @@
    - [Take from Storage](#51-take-from-storage)
    - [Return To Storage](#52-return-to-storage)
    - [Check My History](#53-check-my-history)
-   - [View Logs for Storekeeper](#54-view-logs-for-storekeeper)
-   - [Adding Chemicals](#55-adding-chemicals-to-the-base-for-storekeeper)
-   - [Deleting Chemicals](#56-deleting-chemicals-to-the-base-for-storekeeper)
+   - [View Logs for WH Manager](#54-view-logs-for-wh-manager)
+   - [View Warehouse](#55-view-warehouse)
+   - [Edit Chemical](#56-edit-chemical)
+   - [Delete Chemical](#57-delete-chemical)
+   - [View Taken Chemicals for WH manager](#58-view-taken-chemicals-for-hw-manager)
+   - [Register chemicals to the Data Base for WH manager](#59-register-chemicals-to-the-data-base-for-wh-manager)
+   - [Changning and assigning new roles for user](#59-changing-and-assigning-new-roles-for-user)
 6. [Functional Requirements](#6-functional-requirements)
    - [Chemicals Logging](#61-chemicals-logging)
    - [Transaction Tracking](#62-transaction-tracking)
@@ -67,7 +71,7 @@ The project scope outlines the functionalities that will and will not be include
 - Specifying chemical "storage conditions"
 
 #### User:
-- Ability to log the taking of chemicals, specifying the chemical, quantity, setting the "needed" period and timestamp. If chemical has "special storage conditions e.g. "under argon" or "at -20deg," this warning will be shown on the screen.
+- Ability to log the taking of chemicals, specifying the chemical, and quantity, and setting the "needed" period and timestamp. If a chemical has "special storage conditions e.g. "under argon" or "at -20deg," this warning will be shown on the screen.
 - Ability to log the returning of chemicals, specifying the chemical, quantity, and timestamp
 - Receive email notifications if chemicals are not returned by the set "needed" period.
 
@@ -121,7 +125,7 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 #### **5.1 Take from Storage:**
 
 1. **Login:**
-   - As a user, I want to launch the application, login with my username (autocompletion available), and enter my password for secure access.
+   - As a user, I want to launch the application, log in with my username (auto-completion available), and enter my password for secure access.
 
 2. **Take from storage:**
    - As a user, after logging in, I want to click the "Take from Storage" button to initiate the process of acquiring chemicals.
@@ -136,12 +140,12 @@ This introduction sets the stage for the subsequent sections, outlining the scop
    - As a user, I expect to receive a success or failure message indicating the result of my request, amount of substance mass, or volume should be visible.
 
 6. **Internal Code and CAS Linkage:**
-   - As a system requirement, the internal code, name and CAS should be interconnected to ensure accurate tracking and identification of chemicals.
+   - As a system requirement, the internal code, name, and CAS should be interconnected to ensure accurate tracking and identification of chemicals.
 
 #### **5.2 Return To Storage:**
 
 1. **Login:**
-   - As a user, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access.
+   - As a user, I want to launch the application, log in with my username (auto-completion available), and enter my password for secure access.
 
 2. **Initiate Return To Storage Process:**
    - As a user, after logging in, I want to click the "Return To Storage" button to initiate the process of returning chemicals.
@@ -150,10 +154,10 @@ This introduction sets the stage for the subsequent sections, outlining the scop
    - As a user, during the "Return To Storage" process, I want the application to display a list of chemicals previously taken by me.
 
 4. **Return Chemicals:**
-   - As a user, for each chemical displayed, I want to click the on a specific chemical, enter the quantity in mL or g that I am returning, and click the "Proceed" button.
+   - As a user, for each chemical displayed, I want to click on a specific chemical, enter the quantity in mL or g that I am returning, and click the "Proceed" button.
 
 5. **Confirm**
-   - As a user, I will be redirected to the page for final confirmation. On this page I'll be able to see the substance, used amount, other relevant informaion, and after checking I will click "Confirm" button to finalize the returning.
+   - As a user, I will be redirected to the page for final confirmation. On this page, I'll be able to see the substance, used amount, and other relevant information, and after checking I will click the "Confirm" button to finalize the return.
      
 7. **Feedback:**
    - As a user, I expect to receive a success or failure message indicating the result of my return request.
@@ -161,7 +165,7 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 #### **5.3 Check My History:**
 
 1. **Login:**
-   - As a user, I want to launch the application, log in with my username (auto-completion available), and enter my password for secure access.
+   - As a user, I want to launch the application, login with my username (auto-completion available), and enter my password for secure access.
 
 2. **View Taken Chemicals:**
    - As a user, during the "Check my history" process, I want the application to display a list of chemicals previously taken, not returned by default. This list should include chemicals taken by me. A list of all previously taken and returned chemicals is also should be visible. Sorting by date. 
@@ -179,27 +183,27 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 1. **Login:**
    - As a WH manager, I want to launch the application, login with my username (auto-completion available), and enter my password for secure access. I will be redirected to the WH initial screen.
 2. **View WH** 
-   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, I see how much chemcicals is remained and how much is taken.
+   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, and I see how many chemicals remain and how much is taken.
 3. **Info about chemical**
-   - After clicking the "info" button I will be redirected to the Info page, where I can see all current information about given chemical, who and when took it, how much was taken every time, and how much is remaining.
+   - After clicking the "info" button I will be redirected to the Info page, where I can see all current information about the given chemical, who and when took it, how much was taken every time, and how much is remaining.
 
 #### **5.6 Edit Chemical:**
 1. **Login:**
    - As a WH manager, I want to launch the application, login with my username (auto-completion available), and enter my password for secure access. I will be redirected to the WH initial screen.
 2. **View WH** 
-   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, I see how much chemicals remain and how much is taken.
+   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, and I see how many chemicals remain and how much is taken.
 3. **Select a row with the Chemical**
    - By clicking the row with the chemical that needs to be edited, I can select it.
 3. **Edit Chemical**
-   - By clicking "Edit" button, I wil be redirected to the page, where I can edit or delete existing chemicals.
+   - By clicking the "Edit" button, I will be redirected to the page, where I can edit or delete existing chemicals.
    - After Editing I will be redirected to the confirmation page, where I can see the changes done and after reviewing them I can confirm the change.
-   - Afte pressing "confirm" button I will be redirected to the feedback page, where I receive a message about successful editing.
+   - After pressing the "confirm" button I will be redirected to the feedback page, where I receive a message about successful editing.
 
 #### **5.7 Delete Chemical:**
 1. **Login:**
    - As a WH manager, I want to launch the application, login with my username (auto-completion available), and enter my password for secure access. I will be redirected to the WH initial screen.
 2. **View WH** 
-   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code or name, and I see how many chemicals remain and how much is taken.
+   - By clicking the button "warehouse" I will be redirected to the WH page. Here I have the list of all chemicals, I can search for a chemical by CAS, WH code, or name, and I see how many chemicals remain and how much is taken.
 3. **Select a row with the Chemical**
    - By clicking the row with the chemical that needs to be edited, I can select it.
 3. **Delete Chemical**
@@ -209,7 +213,7 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 
 #### **5.8 View Taken Chemicals for WH manager:**
 1. **Login:**
-   - As a WH manager, I want to launch the application, log in with my username (autocompletion available), and enter my password for secure access. I will be redirected to the WH initial screen.
+   - As a WH manager, I want to launch the application, login with my username (auto-completion available), and enter my password for secure access. I will be redirected to the WH initial screen.
 2. **View Taken Chemicals for WH manager:** 
    - As a user, during the "View Taken Chemicals" process, I want the application to display, by default a list of all chemicals previously taken, and not returned, the list can be sorted by time or user. This list should include chemicals taken by all users, or a specific chemical searched by internal code, CAS, or name. A list of all previously taken chemicals is also should be visible, the list can be sorted by time or user.
    - To notify the User about the chemicals taken, press the "send notification" button and compose a message.  
@@ -224,7 +228,7 @@ This introduction sets the stage for the subsequent sections, outlining the scop
    - As an Admin, I want to launch the application, login with my username (auto-completion available, login and password will be pre-defined), and enter my password for secure access
    - I can click the button "Account Management" on the initial screen.
    - I will be redirected to the page "account management", where I see a search field and I can search users by name.
-   - After finding a user, I can choose a new role for him and I can press the "confirm" button and will get a feedback upon successful or failed operation.
+   - After finding a user, I can choose a new role for him and I can press the "confirm" button and get feedback upon successful or failed operation.
 
 ## 6. Functional Requirements
 **Comprehensive Search:**
@@ -281,15 +285,15 @@ Describe the expected user interface and user experience, including:
 - Screens and navigation flow
 - Input forms
 - Dashboard and reporting layouts
-- Searchbar with possibilities to search by Name, CAS, WH code.
-- Filters (by project, by storage condition, date)
+- Search bar with possibilities to search by Name, CAS, WH code.
+- Filters (by project, storage condition, date)
 
 ## 11. Security Considerations
 Identify potential security risks and outline measures to secure the application and its data.
 
 ## 12. Integration
 Specify integration requirements, if any:
-- A plugin to fetch all convenient names of chemical by its CAS number (written on python or another language). I will use Json to communicate with the app.
+- A plugin to fetch all convenient names of chemicals by their CAS number (written in Python or another language). I will use JSON to communicate with the app.
 - Barcode scanner integration /*Under consideration*/
 - User authentication integration
 
