@@ -60,7 +60,7 @@ The Android Warehouse Chemical Monitoring Application is designed to address the
 
 ## 2. Project Scope
 
-The project scope outlines the functionalities that will and will not be included in the Android Warehouse Chemical Monitoring Application. The application is designed to cater to three distinct roles: Admin, User, and Storekeeper.
+The project scope outlines the functionalities that will and will not be included in the Android Warehouse Chemical Monitoring Application. The application is designed to cater to three distinct roles: Admin, User, and WH Manager.
 
 ### 2.1 Inclusions:
 
@@ -75,7 +75,7 @@ The project scope outlines the functionalities that will and will not be include
 - Ability to log the returning of chemicals, specifying the chemical, quantity, and timestamp
 - Receive email notifications if chemicals are not returned by the set "needed" period.
 
-#### Storekeeper:
+#### WH Manager:
 - Access to detailed reports, including information on who took chemicals, when they were taken, when they were returned, and the remaining quantity.
 - Capability to request reports for specific time periods or chemical types.
 - Chemical management, including the addition, modification, and removal of chemicals. Overview of all chemical transactions.
@@ -238,35 +238,46 @@ This introduction sets the stage for the subsequent sections, outlining the scop
 List and describe the essential features and functionalities of the application:
 
 ### 6.1 Chemicals Logging
-- **Description:** Users should be able to log the taking and returning of chemicals, providing details such as chemical type, quantity, and timestamp.
-- **User Roles:** All roles (Admin, User, Storekeeper)
+- **Description:** Users should be able to log the taking and returning of chemicals, providing details such as CAS number, WH code, chemical name type, quantity, units, and timestamp.
+- **User Roles:** User.
 
 ### 6.2 Transaction Tracking
 - **Description:** The system must track all chemical transactions, including details on who took the chemicals, when they were taken, when they were returned, and the quantity involved.
-- **User Roles:** All roles (Admin, User, Storekeeper)
+- **User Roles:** User, WH Manager.
 
 ### 6.3 User Authentication
-- **Description:** Secure authentication mechanisms should be implemented to ensure that only authorized users (Admin, User, Storekeeper) can access the application.
-- **User Roles:** All roles (Admin, User, Storekeeper)
+- **Description:** Secure authentication mechanisms should be implemented to ensure that only authorized users (Admin, User, WH manager) can access the application.
+- **User Roles:** All roles (Admin, User, WH Manager)
 
 ### 6.4 Code Scanning
 - **Description:** The application should support barcode scanning or QR code scanning to streamline the logging process.
-- **User Roles:** All roles (Admin, User, Storekeeper) /*Comment from DV - I have doubts about the above task, it is not so easy to implement and requires knowledge of some 3rd party applications*/ /*Comment from YP it is not obligatorily and we can scan only digital number like 0000-0/0-000*/
+- **User Roles:** All roles (Admin, User, WH Manager) /*Comment from DV - I have doubts about the above task, it is not so easy to implement and requires knowledge of some 3rd party applications*/ /*Comment from YP it is not obligatorily and we can scan only digital number like 0000-0/0-000*/
+  /*Under consideration*/
 
 ### 6.5 Reporting
-- **Description:** Users, especially Storekeepers, should have access to detailed reports on chemical transactions, indicating who took chemicals, when they were taken, when they were returned, and the remaining quantity.
-- **User Roles:** Storekeeper
+- **Description:** Users, especially WH Managers, should have access to detailed reports on chemical transactions, indicating who took chemicals, when they were taken, when they were returned, and the remaining quantity.
+- **User Roles:** WH Manager
 
 ### 6.6 User Roles and Permissions
-- **Description:** Different roles (Admin, User, Storekeeper) will have distinct permissions to ensure appropriate access levels for each user type.
-- **User Roles:** Admin, User, Storekeeper
+- **Description:** Different roles (Admin, User, WH Manager) will have distinct permissions to ensure appropriate access levels for each user type.
+- **User Roles:** Admin, User, WH Manager
 
 ## 7. Non-Functional Requirements
 Specify non-functional aspects such as:
-- Performance expectations
-- Security measures (encryption, secure authentication)
-- Compatibility with Android devices (minimum Android version)
-
+- **Performance Expectations:**
+  - The application should load within 3 seconds on average on standard internet connections.
+  - Response times for critical operations (such as login, search, and data retrieval) should be less than 1 second.
+  - The system should be able to handle concurrent requests from multiple users without significant degradation in performance.
+  - Database queries should be optimized to ensure efficient data retrieval.
+- **Security measures (encryption, secure authentication)**
+- During registration, all users are assigned the role "guest" and only the admin can assign a new role for a new user (such as "user" or "WH manager").
+- The "guest" role has no access to the platform.
+- **Compatibility with Android Devices:**
+  - The application's user interface should be responsive and optimized for various screen sizes commonly found in Android devices, including smartphones and tablets.
+  - All core functionalities of the application should be fully accessible and functional on Android devices, ensuring a seamless user experience across different devices and screen resolutions.
+  - Compatibility testing should be conducted on a range of Android devices and operating system versions to identify and address any compatibility issues.
+  - The application should adhere to Android design guidelines and best practices to ensure consistency and familiarity for Android users.
+___________ to be added soon ____________________
 ## 8. Technical Stack
 Specify the technology stack:
 - Programming Language: Kotlin
