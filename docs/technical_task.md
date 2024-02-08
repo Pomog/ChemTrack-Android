@@ -11,7 +11,7 @@
 4. [Need for the Application](#4-need-for-the-application)
 5. [User Stories and Use Cases](#5-user-stories-and-use-cases)
    - [Take from Storage](#51-take-from-storage)
-   - [Return Unused](#52-return-unused)
+   - [Return To Storage](#52-return-to-storage)
    - [View Logs for User](#53-view-logs-for-user)
    - [View Logs for Storekeeper](#54-view-logs-for-storekeeper)
    - [Adding Chemicals](#55-adding-chemicals-to-the-base-for-storekeeper)
